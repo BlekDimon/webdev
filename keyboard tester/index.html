@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Tester</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<div class="i-main-box"></div>
+	<div class="wire"></div>
+	<div class="main-box">
+		<div class="mid-box">
+			<div id="esc" style="margin-right: 3%"><span>ESC</span></div>
+			<div id="f1"><span>F1</span></div>
+			<div id="f2"><span>F2</span></div>
+			<div id="f3"><span>F3</span></div>
+			<div id="f4" style="margin-right: 2%"><span>F4</span></div>
+			<div id="f5"><span>F5</span></div>
+			<div id="f6"><span>F6</span></div>
+			<div id="f7"><span>F7</span></div>
+			<div id="f8" style="margin-right: 2%"><span>F8</span></div>
+			<div id="f9"><span>F9</span></div>
+			<div id="f10"><span>F10</span></div>
+			<div id="f11"><span>F11</span></div>
+			<div id="f12" style="margin-right: 3.5%"><span>F12</span></div>
+			<div id="PrintScrn"><span>Print Scrn</span></div>
+			<div id="ScrollLock"><span>Scroll Lock</span></div>
+			<div id="PauseBreak"><span>Pause Break</span></div>
+		</div>
+		<div class="mid-box" style="transform: translate(0, -50%)">
+			<div id="semi"><span>~</span></div>
+			<div id="1"><span>1</span></div>
+			<div id="2"><span>2</span></div>
+			<div id="3"><span>3</span></div>
+			<div id="4"><span>4</span></div>
+			<div id="5"><span>5</span></div>
+			<div id="6"><span>6</span></div>
+			<div id="7"><span>7</span></div>
+			<div id="8"><span>8</span></div>
+			<div id="9"><span>9</span></div>
+			<div id="0"><span>0</span></div>
+			<div id="-"><span>-</span></div>
+			<div id="add"><span>+</span></div>
+			<div id="Backspace" style="margin-right: 3%; width: 6%" ><span>Backspace</span></div>
+			<div id="Insert"><span>Insert</span></div>
+			<div id="Home"><span>Home</span></div>
+			<div id="PageUp" style="margin-right: 3%"><span>Page Up</span></div>
+			<div id="NumLock"><span>Num Lock</span></div>
+			<div id="/"><span>/</span></div>
+			<div id="*"><span>*</span></div>
+			<div id="-"><span>-</span></div>
+		</div>
+		<div class="mid-box" style="transform: translate(0, -125%)">
+			<div id="Tab" style="width: 6%"><span>Tab</span></div>
+			<div id="q"><span>Q</span></div>
+			<div id="w"><span>W</span></div>
+			<div id="e"><span>E</span></div>
+			<div id="r"><span>R</span></div>
+			<div id="t"><span>T</span></div>
+			<div id="y"><span>Y</span></div>
+			<div id="u"><span>U</span></div>
+			<div id="i"><span>I</span></div>
+			<div id="o"><span>O</span></div>
+			<div id="p"><span>P</span></div>
+			<div id="lwall"><span>{</span></div>
+			<div id="rwall"><span>}</span></div>
+			<div id="lslaash" style="margin-right: 3%"><span>\</span></div>
+			<div id="Delete"><span>Delete</span></div>
+			<div id="End"><span>End</span></div>
+			<div id="PageDown" style="margin-right: 3%"><span>Page Down</span></div>
+			<div id="N7"><span>7</span></div>
+			<div id="N8"><span>8</span></div>
+			<div id="N9"><span>9</span></div>
+			<div id="N+" style="height: 88%"><span>+</span></div>
+		</div>
+		<div class="mid-box" style="transform: translate(0, -200%)">
+			<div id="Caps" style="width: 7%"><span>Caps</span></div>
+			<div id="a"><span>A</span></div>
+			<div id="s"><span>S</span></div>
+			<div id="d"><span>D</span></div>
+			<div id="f"><span>F</span></div>
+			<div id="g"><span>G</span></div>
+			<div id="h"><span>H</span></div>
+			<div id="j"><span>J</span></div>
+			<div id="k"><span>K</span></div>
+			<div id="l"><span>L</span></div>
+			<div id="semicolon"><span>;</span></div>
+			<div id="semion"><span>'</span></div>
+			<div id="Enter" style="margin-right: 18.85%; width: 7%" ><span>Enter</span></div>
+			<div id="N4"><span>4</span></div>
+			<div id="N5"><span>5</span></div>
+			<div id="N6"><span>6</span></div>
+		</div>
+		<div class="mid-box" style="transform: translate(0, -275%)">
+			<div class="Shift" style="width: 9.5%"><span>Shift</span></div>
+			<div id="z"><span>Z</span></div>
+			<div id="x"><span>X</span></div>
+			<div id="c"><span>C</span></div>
+			<div id="v"><span>V</span></div>
+			<div id="b"><span>B</span></div>
+			<div id="n"><span>N</span></div>
+			<div id="m"><span>M</span></div>
+			<div id="comma"><span>,</span></div>
+			<div id="dot"><span>.</span></div>
+			<div id="slush"><span>/</span></div>
+			<div class="Shift" style="margin-right: 7.25%; width: 9%"><span>Shift</span></div>
+			<div id="up" style="margin-right: 7.4%"><span>↑</span></div>
+			<div id="N1"><span>1</span></div>
+			<div id="N2"><span>2</span></div>
+			<div id="N3"><span>3</span></div>
+			<div id="NEnter" style="height: 88%"><span>Enter</span></div>
+		</div>
+		<div class="mid-box" style="transform: translate(0, -350%)">
+			<div class="Ctrl" style="width: 6%"><span>Ctrl</span></div>
+			<div class="Win" style="width: 4%"><span>Win</span></div>
+			<div class="Alt" style="width: 4%"><span>Alt</span></div>
+			<div id="Space" style="width: 28%"><span>_____</span></div>
+			<div class="Alt" style="width: 4%"><span>Alt</span></div>
+			<div class="Win" style="width: 4%"><span>Win</span></div>
+			<div id="Fn" style="width: 4%"><span>Fn</span></div>
+			<div class="Ctrl" style="width: 4%; margin-right: 2.8%"><span>Ctrl</span></div>
+			<div id="left"><span>←</span></div>
+			<div id="down"><span>↓</span></div>
+			<div id="right" style="margin-right: 3%"><span>→</span></div>
+			<div id="0" style="width: 8%"><span>0</span></div>
+			<div id="Ndot"><span>.</span></div>
+		</div>
+	</div>
+</body>
+</html>
