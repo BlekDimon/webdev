@@ -1,5 +1,4 @@
-## Witam here
-# Projekty:
+## Projekty:
 * [chat](https://blekdimon.github.io/webdev/chat/)
 * [flappy bird](https://blekdimon.github.io/webdev/floppy%20burd/)
 * [keyboard tester](https://blekdimon.github.io/webdev/keyboard%20tester/)
