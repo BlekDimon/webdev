@@ -6,3 +6,4 @@
 * [walk by mouse](https://blekdimon.github.io/webdev/walk%20by%20mouse/)
 * [zombie shooter 2d](https://blekdimon.github.io/webdev/zombie%20shoota/)
 * [stoper](https://blekdimon.github.io/webdev/stopwatch/)
+* [falling blocks](https://blekdimon.github.io/webdev/falling_blocks/)
