@@ -1,9 +1,12 @@
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
+const buttonLeft = document.querySelector('.button-left');
+const buttonRight = document.querySelector('.button-right');
 
 const pixel = 50;
 var fallingSquares = [];
-var squareDelay = 1000, fallingDelay = 750, points = 0, endTime = 5, endPoints, highscore = localStorage.getItem("fallingBlocksScore");
+var squareDelay = 1000, fallingDelay = 750, points = 0, endTime = 5, endPoints, lmousebool = false, rmousebool = false,
+	highscore = localStorage.getItem("fallingBlocksScore");
 
 var Player = {
 	x: 8,
@@ -21,6 +24,22 @@ document.addEventListener("keydown", (event) => {
 			Player.x = Player.x + 1;
 		}
 	}
+});
+
+buttonLeft.addEventListener("mousedown", () => {
+	lmousebool = true;
+});
+
+buttonLeft.addEventListener("mouseup", () => {
+	lmousebool = false;
+});
+
+buttonRight.addEventListener("mousedown", () => {
+	rmousebool = true;
+});
+
+buttonRight.addEventListener("mouseup", () => {
+	rmousebool = false;
 });
 
 function Square(x) {
@@ -47,7 +66,7 @@ function squaresUpdating() {
 	if (squareDelay < 40) {
 		squareDelay = 40;
 	}
-	
+
 	if (fallingDelay > 100) {
 		fallingDelay = fallingDelay/1.0075;
 	}
@@ -95,7 +114,21 @@ function gameDraw() {
 		}
 	}
 
-	setTimeout(gameDraw, 10);
+	setTimeout(gameDraw, 1);
+}
+
+function mobileMove() {
+	if (lmousebool) {
+		if (Player.x > 0) {
+			Player.x = Player.x + -1;
+		}
+	}
+	if (rmousebool) {
+		if (Player.x < 17) {
+			Player.x = Player.x + 1;
+		}
+	}
+	setTimeout(mobileMove, 250);
 }
 
 function endGame() {
@@ -132,3 +165,4 @@ function endGame() {
 
 squaresUpdating();
 gameDraw();
+mobileMove();
