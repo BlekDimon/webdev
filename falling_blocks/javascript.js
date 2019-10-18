@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 const pixel = 50;
 var fallingSquares = [];
-var squareDelay = 1000, fallingDelay = 750, points = 0, endTime = 5, endPoints, showHighscore, highscore = localStorage.getItem("fallingBlocksScore");
+var squareDelay = 1000, fallingDelay = 750, points = 0, endTime = 5, endPoints, highscore = localStorage.getItem("fallingBlocksScore");
 
 var Player = {
 	x: 8,
