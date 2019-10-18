@@ -68,8 +68,6 @@ function squaresUpdating() {
 		fallingDelay = 75;
 	}
 
-	console.log("loop: " + squareDelay);
-	console.log("falling: " + fallingDelay);
 	setTimeout(squaresUpdating, squareDelay);
 }
 
