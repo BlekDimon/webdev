@@ -41,31 +41,18 @@ function squaresUpdating() {
 	square.loop();
 	fallingSquares.push(square);
 
-	if (squareDelay > 700) {
-		squareDelay = squareDelay - 15;
+	if (squareDelay > 40) {
+		squareDelay = squareDelay/1.0075;
 	}
-	else if (squareDelay > 350) {
-		squareDelay = squareDelay - 10;
+	if (squareDelay < 40) {
+		squareDelay = 40;
 	}
-	else if (squareDelay > 50) {
-		squareDelay = squareDelay - 5;
+	
+	if (fallingDelay > 100) {
+		fallingDelay = fallingDelay/1.0075;
 	}
-	else {
-		squareDelay = 50;
-	}
-
-
-	if (fallingDelay > 500) {
-		fallingDelay = fallingDelay - 15;
-	}
-	else if (fallingDelay > 200) {
-		fallingDelay = fallingDelay - 10;
-	}
-	else if (fallingDelay > 75) {
-		fallingDelay = fallingDelay - 5;
-	}
-	else {
-		fallingDelay = 75;
+	if (fallingDelay < 100) {
+		fallingDelay = 100;
 	}
 
 	setTimeout(squaresUpdating, squareDelay);
