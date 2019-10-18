@@ -26,19 +26,19 @@ document.addEventListener("keydown", (event) => {
 	}
 });
 
-buttonLeft.addEventListener("mousedown", () => {
+buttonLeft.addEventListener("touchstart", () => {
 	lmousebool = true;
 });
 
-buttonLeft.addEventListener("mouseup", () => {
+buttonLeft.addEventListener("touchend", () => {
 	lmousebool = false;
 });
 
-buttonRight.addEventListener("mousedown", () => {
+buttonRight.addEventListener("touchstart", () => {
 	rmousebool = true;
 });
 
-buttonRight.addEventListener("mouseup", () => {
+buttonRight.addEventListener("touchend", () => {
 	rmousebool = false;
 });
 
