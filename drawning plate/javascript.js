@@ -4,7 +4,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var drawnedDots = [], inter, x, y, hue=0;
-var touch = new Hammer(canvas);
 
 window.addEventListener('resize', () => {
 	canvas.width = window.innerWidth;
@@ -15,24 +14,9 @@ window.addEventListener('mousedown', (event) => {
 	inter = setInterval(createDot, 1, event);
 });
 
-touch.on("panstart", (event) => {
-	x = event.clientX;
-	y = event.clientY;
-	inter = setInterval(createDot, 1, event);
-});
-
 window.addEventListener('mousemove', (event) => {
 	x = event.clientX;
 	y = event.clientY;
-});
-
-touch.on("panmove", (event) => {
-	x = event.clientX;
-	y = event.clientY;
-})
-
-touch.on("panend", (event) => {
-	clearInterval(inter);
 });
 
 window.addEventListener('mouseup', () => {
