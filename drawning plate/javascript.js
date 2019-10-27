@@ -15,6 +15,8 @@ window.addEventListener('mousedown', (event) => {
 });
 
 window.addEventListener('touchstart', (event) => {
+	x = event.clientX;
+	y = event.clientY;
 	inter = setInterval(createDot, 1, event);
 });
 
@@ -29,6 +31,8 @@ window.addEventListener('touchmove', (event) => {
 });
 
 window.addEventListener('touchend', (event) => {
+	x = event.clientX;
+	y = event.clientY;
 	clearInterval(inter);
 });
 
