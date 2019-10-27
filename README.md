@@ -7,3 +7,4 @@
 * [zombie shooter 2d](https://blekdimon.github.io/webdev/zombie%20shoota/)
 * [stoper](https://blekdimon.github.io/webdev/stopwatch/)
 * [falling blocks](https://blekdimon.github.io/webdev/falling_blocks/)
+* [board to paint](https://blekdimon.github.io/webdev/drawning%20plate/)
