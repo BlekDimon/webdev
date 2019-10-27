@@ -25,14 +25,14 @@ window.addEventListener('mousemove', (event) => {
 	y = event.clientY;
 });
 
-window.addEventListener('touchmove', (event) => {
+var touch = new Hammer(canvas);
+
+touch.on("pan", (event) => {
 	x = event.clientX;
 	y = event.clientY;
-});
+})
 
 window.addEventListener('touchend', (event) => {
-	x = event.clientX;
-	y = event.clientY;
 	clearInterval(inter);
 });
 
