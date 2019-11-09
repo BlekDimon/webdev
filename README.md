@@ -8,3 +8,4 @@
 * [stoper](https://blekdimon.github.io/webdev/stopwatch/)
 * [falling blocks](https://blekdimon.github.io/webdev/falling_blocks/)
 * [board to paint](https://blekdimon.github.io/webdev/drawning%20plate/)
+* [ranking](https://blekdimon.github.io/webdev/ranking/)
