@@ -51,7 +51,11 @@ body {
 .age,
 .top-age {
     text-align: end;
-    width: 8%;
+    width: 10%;
+}
+
+.top-age {
+    transform: translate(10px);
 }
 
 .points,
