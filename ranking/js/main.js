@@ -130,12 +130,12 @@ const checkToSort = () => {
 };
 
 const sorting = object => {
+    const ranks = document.querySelectorAll(".rank");
+    ranks.forEach((items, i) => {
+        items.remove();
+    });
     //id
     if (object.classList.contains("top-nr")) {
-        const ranks = document.querySelectorAll(".rank");
-        ranks.forEach((items, i) => {
-            items.remove();
-        });
         if (object.querySelectorAll("i")[0].id != "") {
             users.sort((a, b) => {
                 if (a.nr > b.nr) {
@@ -150,10 +150,6 @@ const sorting = object => {
     }
     //first name
     if (object.classList.contains("top-first-name")) {
-        const ranks = document.querySelectorAll(".rank");
-        ranks.forEach((items, i) => {
-            items.remove();
-        });
         if (object.querySelectorAll("i")[0].id != "") {
             users.sort((a, b) => {
                 if (a.firstName > b.firstName) {
@@ -168,10 +164,6 @@ const sorting = object => {
     }
     //last name
     if (object.classList.contains("top-last-name")) {
-        const ranks = document.querySelectorAll(".rank");
-        ranks.forEach((items, i) => {
-            items.remove();
-        });
         if (object.querySelectorAll("i")[0].id != "") {
             users.sort((a, b) => {
                 if (a.lastName > b.lastName) {
@@ -186,10 +178,6 @@ const sorting = object => {
     }
     //points
     if (object.classList.contains("top-points")) {
-        const ranks = document.querySelectorAll(".rank");
-        ranks.forEach((items, i) => {
-            items.remove();
-        });
         if (object.querySelectorAll("i")[0].id != "") {
             users.sort((a, b) => {
                 if (a.points > b.points) {
@@ -204,10 +192,6 @@ const sorting = object => {
     }
     //age
     if (object.classList.contains("top-age")) {
-        const ranks = document.querySelectorAll(".rank");
-        ranks.forEach((items, i) => {
-            items.remove();
-        });
         if (object.querySelectorAll("i")[0].id != "") {
             users.sort((a, b) => {
                 if (a.age > b.age) {
