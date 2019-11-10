@@ -52,6 +52,7 @@ body {
 .top-age {
     text-align: end;
     width: 10%;
+    overflow-x: hidden;
 }
 
 .top-age {
@@ -97,6 +98,14 @@ body {
 .top-first-name,
 .top-last-name {
     transform: translate(9px);
+}
+
+.last-name,
+.first-name,
+.nr,
+.age,
+.points {
+    white-space: nowrap;
 }
 
 .sorter i {
