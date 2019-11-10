@@ -53,6 +53,7 @@ const User = class {
 };
 
 const createUsers = amount => {
+    users = [];
     for (let i = 1; i <= amount; i++) {
         users.push(new User(i));
     }
