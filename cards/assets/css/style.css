@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e0e0e2;
+}
+
+.cards-box {
+  position: relative;
+  width: 400px;
+  height: 530px;
+}
+
+.card {
+  bottom: 0;
+  position: absolute;
+  color: white;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.card img {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border: 1px solid #55555577;
+}
+
+.card:hover .card-inner,
+.card:active .card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .card-front,
+.card .card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: white;
+}
+
+.card .card-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .card-back h2 {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.card.html {
+  top: 132px;
+  left: 68px;
+  width: 175px;
+  height: 175px;
+  font-size: 16px;
+  color: white;
+}
+
+.card.html .card-front,
+.card.html .card-back {
+  background: #e44d26;
+}
+
+.card.html img {
+  width: 70px;
+  height: 70px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.card.css {
+  top: 30px;
+  left: 170px;
+  width: 175px;
+  height: 175px;
+  font-size: 16px;
+  color: white;
+}
+
+.card.css .card-front,
+.card.css .card-back {
+  background: #264de4;
+}
+
+.card.css img {
+  width: 70px;
+  height: 70px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.card.js {
+  top: 235px;
+  left: 171px;
+  width: 175px;
+  height: 175px;
+  font-size: 15px;
+  color: white;
+}
+
+.card.js .card-front,
+.card.js .card-back {
+  background: #fdd83c;
+}
+
+.card.js img {
+  width: 70px;
+  height: 70px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.card.react {
+  top: 0px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  font-size: 13px;
+  color: #61dafb;
+}
+
+.card.react .card-front,
+.card.react .card-back {
+  background: #292929;
+}
+
+.card.react img {
+  width: 60px;
+  height: 60px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.card.git {
+  top: 110px;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  color: #f05033;
+  font-size: 13px;
+}
+
+.card.git img {
+  width: 40px;
+  height: 40px;
+}
+
+.card.sass {
+  top: 170px;
+  left: 257px;
+  width: 100px;
+  height: 100px;
+  color: #cd6799;
+  font-size: 11px;
+}
+
+.card.sass img {
+  width: 40px;
+  height: 30px;
+  top: -2px;
+  left: 2px;
+}
+
+.card.vue {
+  top: 289px;
+  left: 34px;
+  width: 160px;
+  height: 160px;
+  font-size: 16px;
+  color: #41b883;
+}
+
+.card.vue img {
+  width: 75px;
+  height: 65px;
+  top: 8px;
+  left: 8px;
+}
+
+.card.gatsby {
+  top: 377px;
+  left: 132px;
+  width: 145px;
+  height: 145px;
+  font-size: 13px;
+  color: #663399;
+}
+
+.card.gatsby img {
+  width: 60px;
+  height: 60px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.card.bootstrap {
+  top: 230px;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  font-size: 7.5px;
+  color: #563d7c;
+}
+
+.card.bootstrap img {
+  width: 40px;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
