@@ -1,0 +1,19 @@
+.item {
+  width: 250px;
+  height: 250px;
+  background-size: auto 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+}
+
+.photos {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-height: 25px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+/*# sourceMappingURL=style.css.map */

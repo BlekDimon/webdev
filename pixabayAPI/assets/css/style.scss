@@ -1,0 +1,14 @@
+.item {
+    width: 250px;
+    height: 250px;
+    background-size: auto 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightgray;
+}
+
+.photos {
+    max-width: fit-content;
+    min-height: 25px;
+    max-height: fit-content;
+}

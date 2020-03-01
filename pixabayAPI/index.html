@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script def type="module" src="assets/js/main.js"></script>
+        <title>pixabay API</title>
+    </head>
+    <body>
+        <div class="container-xl">
+            <form class="d-flex flex-column align-items-center m-3">
+                <h1>Search image</h1>
+                <input type="text" class="form-control col-4 text-dark text-center" />
+            </form>
+            <div class="d-flex justify-content-around flex-wrap photos"></div>
+            <div class="d-flex flex-column align-items-center">
+                <button class="btn btn-dark m-3 load-more">Load more</button>
+            </div>
+        </div>
+    </body>
+</html>
