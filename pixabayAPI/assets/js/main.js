@@ -1,6 +1,6 @@
-import "/pixabayAPI/node_modules/popper.js/dist/popper.min.js";
-import "/pixabayAPI/node_modules/jquery/dist/jquery.min.js";
-import "/pixabayAPI/node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "../../node_modules/popper.js/dist/popper.min.js";
+import "../../node_modules/jquery/dist/jquery.min.js";
+import "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 const form = document.querySelector("form");
 const container = document.querySelector(".photos");
 let page = 1;
