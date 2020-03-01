@@ -10,3 +10,4 @@
 * [board to paint](https://blekdimon.github.io/webdev/drawning%20plate/)
 * [ranking](https://blekdimon.github.io/webdev/ranking/)
 * [flip cards](https://blekdimon.github.io/webdev/cards/)
+* [photoAPI](https://blekdimon.github.io/webdev/pixabayAPI/)
